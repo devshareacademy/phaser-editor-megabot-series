@@ -24,7 +24,8 @@ export default class Level extends Phaser.Scene {
 		bg.setOrigin(0, 0);
 
 		// player0
-		this.add.image(32, 160, "player", 0);
+		const player0 = this.add.sprite(32, 160, "player", 0);
+		player0.play("player_idle");
 
 		// enemy0
 		this.add.image(128, 128, "enemy", 0);
