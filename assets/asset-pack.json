@@ -1,6 +1,63 @@
 {
     "section1": {
-        "files": []
+        "files": [
+            {
+                "url": [
+                    "assets/audio/battle_man.ogg"
+                ],
+                "type": "audio",
+                "key": "battle_man"
+            },
+            {
+                "url": "assets/spritesheets/levels/twilight_area/bg.png",
+                "type": "image",
+                "key": "bg"
+            },
+            {
+                "url": "assets/spritesheets/enemy.png",
+                "frameConfig": {
+                    "frameWidth": 24,
+                    "frameHeight": 26,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "enemy"
+            },
+            {
+                "url": "assets/spritesheets/explosion.png",
+                "frameConfig": {
+                    "frameWidth": 24,
+                    "frameHeight": 26,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "explosion"
+            },
+            {
+                "url": "assets/spritesheets/player.png",
+                "frameConfig": {
+                    "frameWidth": 28,
+                    "frameHeight": 28,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "player"
+            },
+            {
+                "url": "assets/images/shot.png",
+                "type": "image",
+                "key": "shot"
+            }
+        ]
     },
     "meta": {
         "app": "Phaser Editor 2D - Asset Pack Editor",
