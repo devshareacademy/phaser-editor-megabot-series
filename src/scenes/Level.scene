@@ -39,10 +39,10 @@
             "x": 32,
             "y": 160,
             "animationPlayMethod": 1,
-            "animationKey": "player_idle"
+            "animationKey": "player_run"
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "179920e4-c1e5-4be8-ad2c-5d0edc61178e",
             "label": "enemy0",
             "texture": {
@@ -50,7 +50,9 @@
                 "frame": 0
             },
             "x": 128,
-            "y": 128
+            "y": 128,
+            "animationPlayMethod": 1,
+            "animationKey": "enemy_fly"
         }
     ],
     "plainObjects": [],

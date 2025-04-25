@@ -25,10 +25,11 @@ export default class Level extends Phaser.Scene {
 
 		// player0
 		const player0 = this.add.sprite(32, 160, "player", 0);
-		player0.play("player_idle");
+		player0.play("player_run");
 
 		// enemy0
-		this.add.image(128, 128, "enemy", 0);
+		const enemy0 = this.add.sprite(128, 128, "enemy", 0);
+		enemy0.play("enemy_fly");
 
 		this.events.emit("scene-awake");
 	}
