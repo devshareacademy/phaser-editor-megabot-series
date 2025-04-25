@@ -19,6 +19,16 @@ export default class Level extends Phaser.Scene {
 	/** @returns {void} */
 	editorCreate() {
 
+		// bg
+		const bg = this.add.tileSprite(0, 56, 256, 112, "bg");
+		bg.setOrigin(0, 0);
+
+		// player0
+		this.add.image(32, 160, "player", 0);
+
+		// enemy0
+		this.add.image(128, 128, "enemy", 0);
+
 		this.events.emit("scene-awake");
 	}
 
@@ -29,7 +39,7 @@ export default class Level extends Phaser.Scene {
 	create() {
 
 		this.editorCreate();
-
+		this.cameras.main.setBackgroundColor('0x000000');
 	}
 
 	/* END-USER-CODE */

@@ -2,6 +2,9 @@
     "id": "01aefa93-6044-4159-8358-7e91310aa05f",
     "sceneType": "SCENE",
     "settings": {
+        "snapEnabled": true,
+        "snapWidth": 32,
+        "snapHeight": 32,
         "exportClass": true,
         "autoImport": true,
         "importFileExtension": true,
@@ -11,7 +14,43 @@
         "borderWidth": 256,
         "borderHeight": 224
     },
-    "displayList": [],
+    "displayList": [
+        {
+            "type": "TileSprite",
+            "id": "a8845d50-1e64-4d10-90b6-2b381290a3cf",
+            "label": "bg",
+            "texture": {
+                "key": "bg"
+            },
+            "y": 56,
+            "originX": 0,
+            "originY": 0,
+            "width": 256,
+            "height": 112
+        },
+        {
+            "type": "Image",
+            "id": "93a0bcb7-7831-40a7-92d9-99851af47bbc",
+            "label": "player0",
+            "texture": {
+                "key": "player",
+                "frame": 0
+            },
+            "x": 32,
+            "y": 160
+        },
+        {
+            "type": "Image",
+            "id": "179920e4-c1e5-4be8-ad2c-5d0edc61178e",
+            "label": "enemy0",
+            "texture": {
+                "key": "enemy",
+                "frame": 0
+            },
+            "x": 128,
+            "y": 128
+        }
+    ],
     "plainObjects": [],
     "meta": {
         "app": "Phaser Editor - Scene Editor",
