@@ -3,8 +3,6 @@
     "sceneType": "SCENE",
     "settings": {
         "snapEnabled": true,
-        "snapWidth": 32,
-        "snapHeight": 32,
         "exportClass": true,
         "autoImport": true,
         "importFileExtension": true,
@@ -16,43 +14,129 @@
     },
     "displayList": [
         {
-            "type": "TileSprite",
-            "id": "a8845d50-1e64-4d10-90b6-2b381290a3cf",
-            "label": "bg",
-            "texture": {
-                "key": "bg"
-            },
-            "y": 56,
-            "originX": 0,
-            "originY": 0,
-            "width": 256,
-            "height": 112
+            "type": "Layer",
+            "id": "31c3e87d-07fb-48d5-9e31-67d5c98c8abc",
+            "label": "backgroundLayer",
+            "displayName": "Background Layer",
+            "list": [
+                {
+                    "type": "TileSprite",
+                    "id": "1f7579fd-efd4-4649-87df-47e188417f27",
+                    "label": "backgroundTileSprite",
+                    "displayName": "Background Tile Sprite",
+                    "texture": {
+                        "key": "bg"
+                    },
+                    "y": 56,
+                    "originX": 0,
+                    "originY": 0,
+                    "width": 256,
+                    "height": 112
+                }
+            ]
         },
         {
-            "type": "Sprite",
-            "id": "93a0bcb7-7831-40a7-92d9-99851af47bbc",
-            "label": "player0",
-            "texture": {
-                "key": "player",
-                "frame": 0
-            },
-            "x": 32,
-            "y": 160,
-            "animationPlayMethod": 1,
-            "animationKey": "player_run"
+            "type": "Layer",
+            "id": "f7028a45-0267-4062-860f-226fc5b2b856",
+            "label": "levelLayer",
+            "displayName": "Level Layer",
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "fdc244d3-1f3d-4fd3-87b4-3542e02d34e9",
+                    "label": "floor1",
+                    "displayName": "Floor 1",
+                    "y": 160,
+                    "originX": 0,
+                    "originY": 0,
+                    "isFilled": true,
+                    "fillColor": "#2e063a",
+                    "strokeColor": "#000000",
+                    "width": 128,
+                    "height": 16
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "a7818f33-5b08-471a-9278-dd27746f78cc",
+                    "label": "floor2",
+                    "displayName": "Floor 2",
+                    "x": 160,
+                    "y": 160,
+                    "originX": 0,
+                    "originY": 0,
+                    "isFilled": true,
+                    "fillColor": "#2e063a",
+                    "strokeColor": "#000000",
+                    "width": 128,
+                    "height": 16
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "1f9b7350-19a5-4c94-93bc-23fe63db12ef",
+                    "label": "wall",
+                    "displayName": "Wall",
+                    "y": 64,
+                    "isFilled": true,
+                    "fillColor": "#2e063a",
+                    "strokeColor": "#000000",
+                    "width": 16,
+                    "height": 224
+                }
+            ]
         },
         {
-            "type": "Sprite",
-            "id": "179920e4-c1e5-4be8-ad2c-5d0edc61178e",
-            "label": "enemy0",
-            "texture": {
-                "key": "enemy",
-                "frame": 0
-            },
-            "x": 128,
-            "y": 128,
-            "animationPlayMethod": 1,
-            "animationKey": "enemy_fly"
+            "type": "Layer",
+            "id": "773840a4-f519-4547-a058-82ec2f189a85",
+            "label": "gameplayLayer",
+            "displayName": "Gameplay Layer",
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "59e57125-9835-4af2-8d81-d518eff990a3",
+                    "label": "player",
+                    "displayName": "Player",
+                    "texture": {
+                        "key": "player",
+                        "frame": 0
+                    },
+                    "x": 48,
+                    "y": 144
+                },
+                {
+                    "type": "Sprite",
+                    "id": "d454c039-a46f-438a-b535-a358e8b0c4ca",
+                    "label": "enemy0",
+                    "displayName": "Enemy 0",
+                    "texture": {
+                        "key": "enemy",
+                        "frame": 0
+                    },
+                    "x": 244,
+                    "y": 96
+                }
+            ]
+        },
+        {
+            "type": "Layer",
+            "id": "406509ef-dd41-4815-a42a-db07eaffc4ac",
+            "label": "uiLayer",
+            "displayName": "UI Layer",
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "eee8d4d4-9d93-49d9-90f3-5800ef379033",
+                    "label": "lifeBar",
+                    "displayName": "Life Bar",
+                    "texture": {
+                        "key": "lifebar",
+                        "frame": 0
+                    },
+                    "x": 8,
+                    "y": 8,
+                    "originX": 0,
+                    "originY": 0
+                }
+            ]
         }
     ],
     "plainObjects": [],

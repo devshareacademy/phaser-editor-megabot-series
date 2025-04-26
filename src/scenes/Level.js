@@ -19,17 +19,58 @@ export default class Level extends Phaser.Scene {
 	/** @returns {void} */
 	editorCreate() {
 
-		// bg
-		const bg = this.add.tileSprite(0, 56, 256, 112, "bg");
-		bg.setOrigin(0, 0);
+		// backgroundLayer
+		const backgroundLayer = this.add.layer();
 
-		// player0
-		const player0 = this.add.sprite(32, 160, "player", 0);
-		player0.play("player_run");
+		// backgroundTileSprite
+		const backgroundTileSprite = this.add.tileSprite(0, 56, 256, 112, "bg");
+		backgroundTileSprite.setOrigin(0, 0);
+		backgroundLayer.add(backgroundTileSprite);
+
+		// levelLayer
+		const levelLayer = this.add.layer();
+
+		// floor1
+		const floor1 = this.add.rectangle(0, 160, 128, 16);
+		floor1.setOrigin(0, 0);
+		floor1.isFilled = true;
+		floor1.fillColor = 3016250;
+		floor1.strokeColor = 0;
+		levelLayer.add(floor1);
+
+		// floor2
+		const floor2 = this.add.rectangle(160, 160, 128, 16);
+		floor2.setOrigin(0, 0);
+		floor2.isFilled = true;
+		floor2.fillColor = 3016250;
+		floor2.strokeColor = 0;
+		levelLayer.add(floor2);
+
+		// wall
+		const wall = this.add.rectangle(0, 64, 16, 224);
+		wall.isFilled = true;
+		wall.fillColor = 3016250;
+		wall.strokeColor = 0;
+		levelLayer.add(wall);
+
+		// gameplayLayer
+		const gameplayLayer = this.add.layer();
+
+		// player
+		const player = this.add.sprite(48, 144, "player", 0);
+		gameplayLayer.add(player);
 
 		// enemy0
-		const enemy0 = this.add.sprite(128, 128, "enemy", 0);
-		enemy0.play("enemy_fly");
+		const enemy0 = this.add.sprite(244, 96, "enemy", 0);
+		gameplayLayer.add(enemy0);
+
+		// uiLayer
+		const uiLayer = this.add.layer();
+
+		// lifeBar
+		const lifeBar = this.add.image(8, 8, "lifebar", 0);
+		lifeBar.setOrigin(0, 0);
+		uiLayer.add(lifeBar);
 
 		this.events.emit("scene-awake");
 	}
