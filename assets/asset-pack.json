@@ -45,6 +45,19 @@
                 "key": "explosion"
             },
             {
+                "url": "assets/spritesheets/lifebar.png",
+                "frameConfig": {
+                    "frameWidth": 8,
+                    "frameHeight": 56,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "lifebar"
+            },
+            {
                 "url": "assets/spritesheets/player.png",
                 "frameConfig": {
                     "frameWidth": 28,
@@ -69,6 +82,7 @@
         "contentType": "phasereditor2d.pack.core.AssetContentType",
         "url": "https://phasereditor2d.com",
         "version": 2,
-        "showAllFilesInBlocks": false
+        "showAllFilesInBlocks": false,
+        "visible": true
     }
 }

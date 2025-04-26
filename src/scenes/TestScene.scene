@@ -112,7 +112,22 @@
         {
             "type": "Layer",
             "id": "4ffc730f-f683-4932-a907-8dd50eed9815",
-            "label": "ui"
+            "label": "ui",
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "d1accd65-e4e4-4a92-a2a9-14b9c93a0dc4",
+                    "label": "lifebar0",
+                    "texture": {
+                        "key": "lifebar",
+                        "frame": 0
+                    },
+                    "x": 8,
+                    "y": 8,
+                    "originX": 0,
+                    "originY": 0
+                }
+            ]
         }
     ],
     "plainObjects": [],

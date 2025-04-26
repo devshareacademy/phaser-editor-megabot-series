@@ -66,7 +66,12 @@ export default class TestScene extends Phaser.Scene {
 		gameplay.add(player0);
 
 		// ui
-		this.add.layer();
+		const ui = this.add.layer();
+
+		// lifebar0
+		const lifebar0 = this.add.image(8, 8, "lifebar", 0);
+		lifebar0.setOrigin(0, 0);
+		ui.add(lifebar0);
 
 		this.events.emit("scene-awake");
 	}
