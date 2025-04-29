@@ -42,7 +42,7 @@ export default class Preload extends Phaser.Scene {
 
 	create() {
 
-		this.scene.start("TestScene");
+		this.scene.start("Level");
 	}
 
 	/* END-USER-CODE */

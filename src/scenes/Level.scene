@@ -53,7 +53,14 @@
                     "fillColor": "#2e063a",
                     "strokeColor": "#000000",
                     "width": 128,
-                    "height": 16
+                    "height": 16,
+                    "list": [
+                        {
+                            "prefabId": "24fd8798-b524-41d3-a692-d7e98d203545",
+                            "id": "65164a36-110b-44d2-8eec-d85097f22170",
+                            "label": "enablePhysicsBodyScript"
+                        }
+                    ]
                 },
                 {
                     "type": "Rectangle",
@@ -68,7 +75,14 @@
                     "fillColor": "#2e063a",
                     "strokeColor": "#000000",
                     "width": 128,
-                    "height": 16
+                    "height": 16,
+                    "list": [
+                        {
+                            "prefabId": "24fd8798-b524-41d3-a692-d7e98d203545",
+                            "id": "ee9c1adb-19ec-44af-bb26-d8cef0822c61",
+                            "label": "enablePhysicsBodyScript_2"
+                        }
+                    ]
                 },
                 {
                     "type": "Rectangle",
@@ -80,7 +94,14 @@
                     "fillColor": "#2e063a",
                     "strokeColor": "#000000",
                     "width": 16,
-                    "height": 224
+                    "height": 224,
+                    "list": [
+                        {
+                            "prefabId": "24fd8798-b524-41d3-a692-d7e98d203545",
+                            "id": "99a7c8b0-eff9-47ec-868a-d181398555a8",
+                            "label": "enablePhysicsBodyScript_1"
+                        }
+                    ]
                 }
             ]
         },
@@ -91,14 +112,14 @@
             "displayName": "Gameplay Layer",
             "list": [
                 {
-                    "type": "Sprite",
+                    "prefabId": "01d32f83-d2dd-4f45-a612-cca79202c251",
                     "id": "59e57125-9835-4af2-8d81-d518eff990a3",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
                     "label": "player",
                     "displayName": "Player",
-                    "texture": {
-                        "key": "player",
-                        "frame": 0
-                    },
                     "x": 48,
                     "y": 144
                 },
@@ -139,11 +160,31 @@
             ]
         }
     ],
-    "plainObjects": [],
+    "plainObjects": [
+        {
+            "id": "43441ca9-ac22-4482-8ba9-32d8e0e36d36",
+            "type": "Collider",
+            "label": "collider",
+            "scope": "LOCAL",
+            "object1": "player",
+            "object2": "collisionObjects"
+        }
+    ],
     "meta": {
         "app": "Phaser Editor - Scene Editor",
         "url": "https://phaser.io/editor",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 5
-    }
+    },
+    "lists": [
+        {
+            "id": "1425c7bc-1ef2-41ab-828b-289b80654a44",
+            "label": "collisionObjects",
+            "objectIds": [
+                "1f9b7350-19a5-4c94-93bc-23fe63db12ef",
+                "a7818f33-5b08-471a-9278-dd27746f78cc",
+                "fdc244d3-1f3d-4fd3-87b4-3542e02d34e9"
+            ]
+        }
+    ]
 }

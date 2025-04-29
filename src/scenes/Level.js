@@ -3,6 +3,8 @@
 
 /* START OF COMPILED CODE */
 
+import EnablePhysicsBodyScript from "../scriptnodes/EnablePhysicsBodyScript.js";
+import PlayerPrefab from "../prefabs/PlayerPrefab.js";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -38,6 +40,9 @@ export default class Level extends Phaser.Scene {
 		floor1.strokeColor = 0;
 		levelLayer.add(floor1);
 
+		// enablePhysicsBodyScript
+		new EnablePhysicsBodyScript(floor1);
+
 		// floor2
 		const floor2 = this.add.rectangle(160, 160, 128, 16);
 		floor2.setOrigin(0, 0);
@@ -46,6 +51,9 @@ export default class Level extends Phaser.Scene {
 		floor2.strokeColor = 0;
 		levelLayer.add(floor2);
 
+		// enablePhysicsBodyScript_2
+		new EnablePhysicsBodyScript(floor2);
+
 		// wall
 		const wall = this.add.rectangle(0, 64, 16, 224);
 		wall.isFilled = true;
@@ -53,11 +61,14 @@ export default class Level extends Phaser.Scene {
 		wall.strokeColor = 0;
 		levelLayer.add(wall);
 
+		// enablePhysicsBodyScript_1
+		new EnablePhysicsBodyScript(wall);
+
 		// gameplayLayer
 		const gameplayLayer = this.add.layer();
 
 		// player
-		const player = this.add.sprite(48, 144, "player", 0);
+		const player = new PlayerPrefab(this, 48, 144);
 		gameplayLayer.add(player);
 
 		// enemy0
@@ -72,8 +83,19 @@ export default class Level extends Phaser.Scene {
 		lifeBar.setOrigin(0, 0);
 		uiLayer.add(lifeBar);
 
+		// lists
+		const collisionObjects = [wall, floor2, floor1];
+
+		// collider
+		this.physics.add.collider(player, collisionObjects);
+
+		this.collisionObjects = collisionObjects;
+
 		this.events.emit("scene-awake");
 	}
+
+	/** @type {Phaser.GameObjects.Rectangle[]} */
+	collisionObjects;
 
 	/* START-USER-CODE */
 
