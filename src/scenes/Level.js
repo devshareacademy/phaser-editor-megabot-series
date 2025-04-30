@@ -5,6 +5,9 @@
 
 import EnablePhysicsBodyScript from "../scriptnodes/EnablePhysicsBodyScript.js";
 import PlayerPrefab from "../prefabs/PlayerPrefab.js";
+import CameraFollowObjectScript from "../scriptnodes/CameraFollowObjectScript.js";
+import SetCameraBoundsScript from "../scriptnodes/SetCameraBoundsScript.js";
+import FadeCameraScript from "../scriptnodes/FadeCameraScript.js";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -83,11 +86,23 @@ export default class Level extends Phaser.Scene {
 		lifeBar.setOrigin(0, 0);
 		uiLayer.add(lifeBar);
 
+		// cameraFollowObjectScript
+		const cameraFollowObjectScript = new CameraFollowObjectScript(this);
+
+		// setCameraBoundsScript
+		new SetCameraBoundsScript(this);
+
+		// fadeCameraScript
+		new FadeCameraScript(this);
+
 		// lists
 		const collisionObjects = [wall, floor2, floor1];
 
 		// collider
 		this.physics.add.collider(player, collisionObjects);
+
+		// cameraFollowObjectScript (prefab fields)
+		cameraFollowObjectScript.targetGameObject = player;
 
 		this.collisionObjects = collisionObjects;
 

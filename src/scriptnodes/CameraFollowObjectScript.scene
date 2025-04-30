@@ -1,0 +1,81 @@
+{
+    "id": "196f088e-0055-4a09-b4d2-449844be6874",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 256,
+        "borderHeight": 224
+    },
+    "displayList": [
+        {
+            "type": "ScriptNode",
+            "id": "f1957ae9-a28d-4e7f-9a30-19502101d6b7",
+            "label": "scriptnode_1"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    },
+    "prefabProperties": [
+        {
+            "name": "targetGameObject",
+            "label": "Target Game Object",
+            "tooltip": "The game object we want the camera to follow.",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "object-var",
+                "expressionType": "Phaser.GameObjects.GameObject"
+            }
+        },
+        {
+            "name": "lerpX",
+            "label": "Lerp X",
+            "tooltip": "A value between 0 and 1. This value specifies the amount of linear interpolation to use when horizontally tracking the target. The closer the value to 1, the faster the camera will track.",
+            "defValue": 0.5,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "lerpY",
+            "label": "Lerp Y",
+            "tooltip": "A value between 0 and 1. This value specifies the amount of linear interpolation to use when vertically tracking the target. The closer the value to 1, the faster the camera will track.",
+            "defValue": 0.5,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "deadZoneWidth",
+            "label": "Dead Zone Width",
+            "tooltip": "The width of the deadzone rectangle in pixels.",
+            "defValue": 100,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "deadZoneHeight",
+            "label": "Dead Zone Height",
+            "tooltip": "The height of the deadzone rectangle in pixels.",
+            "defValue": 100,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        }
+    ]
+}

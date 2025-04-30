@@ -158,6 +158,28 @@
                     "originY": 0
                 }
             ]
+        },
+        {
+            "prefabId": "196f088e-0055-4a09-b4d2-449844be6874",
+            "id": "05be7e1a-c04e-45fd-a622-76825c8666fb",
+            "unlock": [
+                "targetGameObject"
+            ],
+            "label": "cameraFollowObjectScript",
+            "displayName": "Update Camera To Follow Player Script",
+            "targetGameObject": "player"
+        },
+        {
+            "prefabId": "d0aada63-ad76-4e7a-955c-e823f499c409",
+            "id": "82b12b30-660b-43c6-aa7e-b01d81558e30",
+            "label": "setCameraBoundsScript",
+            "displayName": "Set Camera Bounds Script"
+        },
+        {
+            "prefabId": "a7ec70c1-9b25-44c7-acd0-d401e7f791a7",
+            "id": "a0e6d8b0-c158-47b0-8dc4-db79691e4e20",
+            "label": "fadeCameraScript",
+            "displayName": "Fade Camera In Script"
         }
     ],
     "plainObjects": [

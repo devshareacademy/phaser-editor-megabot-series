@@ -1,0 +1,70 @@
+{
+    "id": "d0aada63-ad76-4e7a-955c-e823f499c409",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 256,
+        "borderHeight": 224
+    },
+    "displayList": [
+        {
+            "type": "ScriptNode",
+            "id": "1c3a44f0-2d59-462b-8f20-0e68971c5ba7",
+            "label": "scriptnode_1"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    },
+    "prefabProperties": [
+        {
+            "name": "x",
+            "label": "X",
+            "tooltip": "The top-left x coordinate of the bounds.",
+            "defValue": 0,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "y",
+            "label": "Y",
+            "tooltip": "The top-left y coordinate of the bounds.",
+            "defValue": 0,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "width",
+            "label": "Width",
+            "tooltip": "The width of the bounds, in pixels.",
+            "defValue": 768,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "height",
+            "label": "Height",
+            "tooltip": "The height of the bounds, in pixels.",
+            "defValue": 224,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        }
+    ]
+}
