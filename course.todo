@@ -1,0 +1,39 @@
+Course Outline
+---
+
+Getting Started:
+  ☐ Phaser Editor v4: How to Load and Use Game Assets ✅ (Already listed)
+  ☐ Phaser Editor v4: Quick Guide to Sprite Animations ✅ (Already listed)
+  ☐ Phaser Editor v4: Setting Up a Phaser Scene and Game Configuration
+  ☐ Phaser Editor v4: How to Use the Scene Editor for Level Design
+  ☐ Phaser Editor v4: Adding a Player Character and Basic Movement
+  ☐ Phaser Editor v4: How to Add Player Jump
+  ☐ Phaser Editor v4: Using Camera Controls for Smooth Transitions
+
+Level Design and Interactivity:
+  ☐ Phaser Editor v4: Using Tilemaps to Create a Platformer Level
+  ☐ Phaser Editor v4: How to Add Platforms and collisions (Might go away or change to another type)
+  ☐ Phaser Editor v4: Creating Doors and Scene Transitions
+  ☐ Phaser Editor v4: Creating Ladders and Scene Transitions
+  ☐ Phaser Editor v4: How to Add Level Select Screen
+  ☐ Phaser Editor v4: How to 2nd Level
+
+Core Gameplay Mechanics:
+  ☐ Phaser Editor v4: Player death and respawn
+  ☐ Phaser Editor v4: Implementing Player Shooting and Projectiles
+  ☐ Phaser Editor v4: Creating Enemy AI and Basic Attacks
+  ☐ Phaser Editor v4: How to Add Enemy Health and Defeat Mechanics
+  ☐ Phaser Editor v4: Setting Up Player Health and Damage Handling
+  ☐ Phaser Editor v4: Creating a Simple HUD for Player Stats
+  ☐ Phaser Editor v4: Adding Collectible Items (Health)
+
+Polish and Final Touches:
+  ☐ Phaser Editor v4: How to Add Sound Effects and Music
+  ☐ Phaser Editor v4: Creating a Simple Main Menu and Game Over Screen
+  ☐ Phaser Editor v4: Exporting and Publishing Your Phaser Game
+
+Not sure yet:
+  ☐ Phaser Editor v4: Adding a Boss Battle to the Game
+  ☐ Phaser Editor v4: Adding Collectible Items (Ammo, Power-Ups)
+  ☐ Phaser Editor v4: How to Add Moving Obstacles
+  ☐ Phaser Editor v4: Checkpoints in a level

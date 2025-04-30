@@ -19,6 +19,13 @@
                 "key": "bg"
             },
             {
+                "url": [
+                    "assets/audio/bullet.ogg"
+                ],
+                "type": "audio",
+                "key": "bullet"
+            },
+            {
                 "url": "assets/spritesheets/enemy.png",
                 "frameConfig": {
                     "frameWidth": 24,
@@ -43,6 +50,20 @@
                 },
                 "type": "spritesheet",
                 "key": "explosion"
+            },
+            {
+                "url": [
+                    "assets/audio/hit.ogg"
+                ],
+                "type": "audio",
+                "key": "hit"
+            },
+            {
+                "url": [
+                    "assets/audio/jump.ogg"
+                ],
+                "type": "audio",
+                "key": "jump"
             },
             {
                 "url": "assets/spritesheets/lifebar.png",

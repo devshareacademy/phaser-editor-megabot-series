@@ -20,8 +20,12 @@ export default class PlayerPrefab extends Phaser.Physics.Arcade.Sprite {
 		// rightKey
 		const rightKey = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
 
+		// zKey
+		const zKey = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.Z);
+
 		this.leftKey = leftKey;
 		this.rightKey = rightKey;
+		this.zKey = zKey;
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.
@@ -36,6 +40,8 @@ export default class PlayerPrefab extends Phaser.Physics.Arcade.Sprite {
 	leftKey;
 	/** @type {Phaser.Input.Keyboard.Key} */
 	rightKey;
+	/** @type {Phaser.Input.Keyboard.Key} */
+	zKey;
 
 	/* START-USER-CODE */
 
@@ -55,6 +61,13 @@ export default class PlayerPrefab extends Phaser.Physics.Arcade.Sprite {
 		} else {
 			this.setVelocityX(0);
 			this.play("player_idle", true);
+		}
+		if (Phaser.Input.Keyboard.JustDown(this.zKey) && this.body.blocked.down) {
+			this.setVelocityY(-200);
+			this.scene.sound.play('jump');
+		}
+		if (!this.body.blocked.down) {
+			this.play('player_jump', true);
 		}
 	}
 

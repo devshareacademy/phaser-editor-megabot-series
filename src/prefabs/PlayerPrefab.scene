@@ -37,6 +37,12 @@
             "type": "Keyboard.Key",
             "label": "rightKey",
             "keyCode": "RIGHT"
+        },
+        {
+            "id": "da75cfeb-d3c2-45ad-84fc-23eb757aa40d",
+            "type": "Keyboard.Key",
+            "label": "zKey",
+            "keyCode": "Z"
         }
     ],
     "meta": {
