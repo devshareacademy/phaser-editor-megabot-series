@@ -42,6 +42,10 @@ export default class PlayerPrefab extends Phaser.Physics.Arcade.Sprite {
 	rightKey;
 	/** @type {Phaser.Input.Keyboard.Key} */
 	zKey;
+	/** @type {number} */
+	speed = 80;
+	/** @type {number} */
+	jumpForce = 200;
 
 	/* START-USER-CODE */
 
@@ -51,11 +55,11 @@ export default class PlayerPrefab extends Phaser.Physics.Arcade.Sprite {
 			return;
 		}
 		if (this.leftKey.isDown) {
-			this.setVelocityX(-80);
+			this.setVelocityX(this.speed * -1);
 			this.setFlipX(true);
 			this.play("player_run", true);
 		} else if (this.rightKey.isDown) {
-			this.setVelocityX(80);
+			this.setVelocityX(this.speed);
 			this.setFlipX(false);
 			this.play("player_run", true);
 		} else {
@@ -63,7 +67,7 @@ export default class PlayerPrefab extends Phaser.Physics.Arcade.Sprite {
 			this.play("player_idle", true);
 		}
 		if (Phaser.Input.Keyboard.JustDown(this.zKey) && this.body.blocked.down) {
-			this.setVelocityY(-200);
+			this.setVelocityY(this.jumpForce * -1);
 			this.scene.sound.play('jump');
 		}
 		if (!this.body.blocked.down) {

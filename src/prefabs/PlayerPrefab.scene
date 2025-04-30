@@ -50,5 +50,27 @@
         "url": "https://phaser.io/editor",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 5
-    }
+    },
+    "prefabProperties": [
+        {
+            "name": "speed",
+            "label": "Speed",
+            "tooltip": "How fast the player can move.",
+            "defValue": 80,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "jumpForce",
+            "label": "Jump Force",
+            "tooltip": "How high the player can jump.",
+            "defValue": 200,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        }
+    ]
 }
