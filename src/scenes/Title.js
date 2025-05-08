@@ -6,20 +6,14 @@
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
-export default class Preload extends Phaser.Scene {
+export default class Title extends Phaser.Scene {
 
 	constructor() {
-		super("Preload");
+		super("Title");
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.
 		/* END-USER-CTR-CODE */
-	}
-
-	/** @returns {void} */
-	editorPreload() {
-
-		this.load.pack("asset-pack", "assets/asset-pack.json");
 	}
 
 	/** @returns {void} */
@@ -32,17 +26,10 @@ export default class Preload extends Phaser.Scene {
 
 	// Write your code here
 
-	preload() {
-
-		this.editorCreate();
-
-		this.editorPreload();
-
-	}
-
 	create() {
 
-		this.scene.start("Title");
+		this.editorCreate();
+		this.scene.start('Level');
 	}
 
 	/* END-USER-CODE */

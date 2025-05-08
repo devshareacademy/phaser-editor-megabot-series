@@ -1,6 +1,6 @@
 import Level from "./scenes/Level.js";
 import Preload from "./scenes/Preload.js";
-import TestScene from "./scenes/TestScene.js";
+import Title from "./scenes/Title.js";
 
 window.addEventListener('load', function () {
 
@@ -17,6 +17,6 @@ window.addEventListener('load', function () {
 	});
 
 	game.scene.add("Level", Level);
-	game.scene.add("TestScene", TestScene);
+	game.scene.add("Title", Title);
 	game.scene.add("Preload", Preload, true);
 });
