@@ -26,6 +26,11 @@
                 "key": "bullet"
             },
             {
+                "url": "assets/images/collision.png",
+                "type": "image",
+                "key": "collision"
+            },
+            {
                 "url": "assets/spritesheets/enemy.png",
                 "frameConfig": {
                     "frameWidth": 24,
@@ -95,6 +100,19 @@
                 "url": "assets/images/shot.png",
                 "type": "image",
                 "key": "shot"
+            },
+            {
+                "url": "assets/spritesheets/levels/twilight_area/tileset.png",
+                "frameConfig": {
+                    "frameWidth": 16,
+                    "frameHeight": 16,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "tileset"
             }
         ]
     },
